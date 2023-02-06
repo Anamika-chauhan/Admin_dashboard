@@ -1,9 +1,44 @@
-import Navbar from "./navbar.scss"
+import "./navbar.scss";
+import SearchIcon from '@mui/icons-material/Search';
+import LanguageIcon from '@mui/icons-material/Language';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import ListIcon from '@mui/icons-material/List';
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      Navbar
+      <div className="wrapper">
+        <div className="search">
+          <input type="text" placeholder="Search..."/>
+          <SearchIcon />
+        </div>
+        <div className="items">
+          <div className="item" >
+            <LanguageIcon className="icon" />
+          </div>
+          <div className="item">
+            <DarkModeOutlinedIcon className="icon" />
+          </div>
+          <div className="item">
+            <FullscreenExitIcon className="icon"  />
+          </div>
+          <div className="item">
+            <NotificationsNoneOutlinedIcon className="icon" />
+          </div>
+          <div className="item">
+            <ChatBubbleOutlineIcon className="icon" />
+          </div>
+          <div className="item">
+            <ListIcon className="icon" />
+          </div>
+          <div className="item">
+            <img src="" className="avatar"/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
