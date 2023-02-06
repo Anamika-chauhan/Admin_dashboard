@@ -27,15 +27,17 @@ const Navbar = () => {
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
+            <div className="counter">1</div>
           </div>
           <div className="item">
             <ChatBubbleOutlineIcon className="icon" />
+            <div className="counter">2</div>
           </div>
           <div className="item">
             <ListIcon className="icon" />
           </div>
           <div className="item">
-            <img src="" className="avatar"/>
+            <img src="https://cdn.pixabay.com/photo/2022/08/26/04/03/woman-7411665_960_720.png" alt="" className="avatar"/>
           </div>
         </div>
       </div>
